@@ -20,9 +20,8 @@ jobs:
       - run: npm install
       - run: npx electron-builder --win
 
-      - name: Upload Installer
-        uses: softprops/action-gh-release@v1
-        with:
-          files: dist/*.exe
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     - name: Upload Artifact
+  uses: actions/upload-artifact@v4
+  with:
+    name: ChemNova-Installer
+    path: dist/*.exe
