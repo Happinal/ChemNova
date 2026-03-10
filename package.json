@@ -2,7 +2,7 @@
   "name": "chemnova-virtual-chemistry",
   "version": "1.0.0",
   "description": "ChemNova Virtual Chemistry 2026 Edition",
-  "main": "src/main.js",
+  "main": "main.js"
   "author": "ChemNova Technologies",
   "license": "MIT",
   "scripts": {
