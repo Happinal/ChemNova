@@ -6,15 +6,11 @@ function createWindow() {
     width: 1200,
     height: 800,
     webPreferences: {
-      contextIsolation: false,
-      nodeIntegration: true
+      contextIsolation: true
     }
   });
 
-  const startUrl = path.join(__dirname, 'index.html');
-  win.loadURL(`file://${startUrl}`);
-
-  win.webContents.openDevTools(); // remove later if you want
+  win.loadFile('src/index.html');
 }
 
 app.whenReady().then(createWindow);
