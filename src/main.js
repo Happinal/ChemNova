@@ -7,7 +7,8 @@ function createWindow() {
     height: 800
   });
 
-  win.loadFile(path.join(__dirname, 'index.html'));
+  const indexPath = path.join(app.getAppPath(), 'src', 'index.html');
+  win.loadFile(indexPath);
 }
 
 app.whenReady().then(createWindow);
