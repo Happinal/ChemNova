@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ChemNova Virtual Chemistry 2026 Edition</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#0b1020;color:white;text-align:center}
+header{background:#111827;padding:25px}
+section{padding:20px}
+.card{background:#1f2937;padding:20px;border-radius:10px;margin:20px auto;width:80%}
+button{padding:10px 15px;border:none;border-radius:6px;background:#22d3ee;color:black;font-weight:bold;cursor:pointer}
+.sim-output{margin-top:15px;font-size:18px;color:#22d3ee}
+footer{background:#111827;padding:15px;margin-top:30px}
+</style>
+<script>
+function runSimulation(){
+  const ph=(Math.random()*14).toFixed(2);
+  document.getElementById("out").innerHTML="Simulated pH Reading: "+ph;
+}
+</script>
+</head>
+<body>
+
+<header>
+<h1>Welcome to ChemNova Virtual Chemistry</h1>
+<p>2026 Edition</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>Interactive Titration Simulation</h2>
+<button onclick="runSimulation()">Run Simulation</button>
+<div id="out" class="sim-output"></div>
+</div>
+
+<div class="card">
+<h2>Laboratory Apparatus</h2>
+<p>Burette • Pipette • Conical Flask • Beaker</p>
+</div>
+
+<div class="card">
+<h2>ChemNova Solutions</h2>
+<p><strong>Strong Acids:</strong> HCl, HNO₃, H₂SO₄</p>
+<p><strong>Weak Acids:</strong> CH₃COOH, H₂CO₃</p>
+<p><strong>Strong Bases:</strong> NaOH, KOH</p>
+<p><strong>Weak Bases:</strong> NH₃</p>
+</div>
+
+</section>
+
+<footer>
+Developed by Anga Peter Inalegwu<br>
+© 2026 ChemNova Technologies
+</footer>
+
+</body>
+</html>
